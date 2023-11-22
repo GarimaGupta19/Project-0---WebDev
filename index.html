@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+</head>
+<link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mohave:ital@1&display=swap" rel="stylesheet">">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body{
+        font-family: 'Mohave', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('gymgirl.jpg');
+    }
+    .left{
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        
+    }
+    .left img{
+        width: 135px;
+    }
+    .mid{
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 45px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px;
+        font-size: 25px;
+    }
+    .navbar li a:hover{
+        text-decoration: underline;
+        color: grey;
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(72, 66, 66);
+    }
+    .container{
+        border: 2px solid white;
+        margin: 243px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+    .form-group input{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        display: block;
+        width: 360px;
+        padding: 6px;
+        border: 2px solid black;
+        margin: 11px auto;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+    .gymname{
+        text-align: center;
+    }
+    .phrase{
+        position: absolute;
+        left: 120px;
+        top: 200px;
+        display: inline-block;
+    }
+    .phrase h3{
+        text-align: center;
+        font-family: 'Mohave', sans-serif;
+        font-size: 30px;
+        color: antiquewhite;
+    }
+    .box{
+        border: rgb(27, 24, 24);
+        border-radius: 18px;
+        margin-left: 34px;
+        position: sticky;
+                bottom: 9px;
+    }
+    .boxtxt{
+                display: inline-block;
+                margin-right: 9px;
+                width: fit-content;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="gymlogo.jpeg" alt="">
+            <div class="gymname">Milestone Fitness</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+                </ul>
+        </div>
+
+         <!-- right box for buttons -->
+         <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+         </div>
+    </header>
+
+    <!-- container box for details -->
+    <div class="container">
+        <h1>Join the Best Gym of Delhi</h1>
+        <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <button class="btn">Submit</button>
+        </form>
+    </div>
+
+    <!-- Catchy phrase -->
+    <div class="phrase">
+        <h3>Unleash your Strength, Transform your Life!</h3>
+    </div>
+    <div class="box">
+    <div class="boxtxt"> Address = SCO-180, Kashmere Gate, New Delhi </div>
+    <div class="boxtxt">Contact: 9417XXXXXX</div>
+    <div class="boxtxt">Follow Us at: Instagram, Twitter & Facebook</div>
+    </div>
+</body>
+</html>
